@@ -1,14 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import PetList from "../views/PetList.vue";
+import Pet from "../views/Pet";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home
+    path: "/pet_list",
+    name: "PetList",
+    component: PetList
+  },
+  {
+    path: "/pet/:petId",
+    name: "Pet",
+    component: Pet
   },
   {
     path: "/about",
@@ -22,6 +28,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 });
 
