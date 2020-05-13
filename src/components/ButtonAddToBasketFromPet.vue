@@ -16,12 +16,6 @@
           "petId",
         ],
         mixins: [AddToBasket],
-
-        mounted() {
-            console.log(this);
-
-
-        },
     }
 
 </script>
