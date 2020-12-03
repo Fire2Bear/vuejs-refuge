@@ -2,7 +2,6 @@ import { createLocalVue } from '@vue/test-utils'
 import Vuex from 'vuex'
 // eslint-disable-next-line no-unused-vars
 import storeConfig from '../../src/store';
-import { cloneDeep } from 'lodash'
 
 describe('Testing the pet store', () => {
 
